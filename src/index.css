@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+	font-family: Satoshi;
+	src: url('/Satoshi.ttf');
+} */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fadeIn {
+	animation: fadeIn 0.3s ease-out;
+}
+
+@font-face {
+	font-family: MissLeGatees;
+	src: url('/Miss\ Le\ Gatees\ Regular.ttf');
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	background-color: #007bff;
+	color: #fff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body {
+	overflow-x: hidden;
+}
